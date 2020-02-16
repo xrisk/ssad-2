@@ -17,8 +17,8 @@ router.get('/', async (req, res) => {
 router.post(
   '/login',
   passport.authenticate('vendorLocal', {
-    successRedirect: '/api/vendor',
-    failureRedirect: '/api/vendor/login',
+    successRedirect: '/vendor',
+    failureRedirect: '/',
   }),
 );
 
